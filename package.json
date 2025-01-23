@@ -2,10 +2,8 @@
     "name": "portfolio",
     "version": "1.0.0",
     "description": "My portfolio website",
-    "main": "index.js",
-    "scripts": {
-      "build": "echo 'Building the project...' && mkdir -p dist && rsync -av --exclude dist . dist/"
-    },
+    "main": "index.html",
+    "scripts": {},
     "dependencies": {},
     "devDependencies": {}
   }
