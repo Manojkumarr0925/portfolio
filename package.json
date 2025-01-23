@@ -7,7 +7,7 @@
       "build": "echo 'Building the project...' && mkdir -p dist && cp -R * dist/"
     },
     "dependencies": {
-      "your-dependency": "^version"
+      "your-dependency": "1.0.0"
     },
     "devDependencies": {}
   }
