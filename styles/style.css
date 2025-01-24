@@ -52,16 +52,16 @@ header .color-line {
 }
 
 .intro img {
-    width: 300px;
-    height: 300px;
+    width: 200px; /* Reduced width for better mobile view */
+    height: 200px; /* Reduced height for better mobile view */
     border-radius: 50%;
-    margin-left: 30px;
+    margin-left: 20px; /* Ensure some spacing around image */
 }
 
 .intro-text {
     max-width: 600px;
-    margin-right: 30px;
-    text-align: left; /* Align text to left by default */
+    margin-right: 20px; /* Add margin for better spacing */
+    text-align: center; /* Center text on smaller screens */
 }
 
 .intro-text h1 {
@@ -78,11 +78,11 @@ header .color-line {
 
 .social-icons {
     margin-top: 20px;
-    text-align: left; /* Align social icons to left by default */
+    text-align: center; /* Center align icons */
 }
 
 .social-icons a {
-    margin-right: 10px;
+    margin: 0 5px; /* Add margin around icons */
 }
 
 .social-icons img {
@@ -99,8 +99,8 @@ header .color-line {
 
 .tab-container {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    padding: 0 20px; /* Add padding for better spacing on mobile */
 }
 
 .tab-menu {
@@ -229,9 +229,6 @@ a:hover {
     .intro {
         padding: 20px; /* Reduce padding for smaller screens */
     }
-    .intro-text {
-        text-align: center; /* Center text on smaller screens */
-    }
     .intro-text h1 {
         font-size: 1.5em; /* Reduce heading size for mobile */
     }
@@ -239,8 +236,9 @@ a:hover {
         width: 150px; /* Further reduce width for smaller screens */
         height: 150px; /* Further reduce height for smaller screens */
     }
-    .social-icons {
-        text-align: center; /* Center align icons on smaller screens */
+    .social-icons img {
+        width: 20px; /* Further reduce width for smaller screens */
+        height: 20px; /* Further reduce height for smaller screens */
     }
     .section-heading {
         font-size: 1.8em; /* Further reduce size for better mobile view */
@@ -252,5 +250,16 @@ a:hover {
     .tab-menu {
         border-right: none; /* Remove border on mobile */
         border-bottom: 1px solid #34495e; /* Add bottom border */
+        text-align: center; /* Center align text on mobile */
+    }
+    .tab-content-container {
+        padding-left: 0; /* Remove left padding on mobile */
+    }
+    .tab-menu li {
+        text-align: center; /* Center align list items on mobile */
+    }
+    .tab-content ul,
+    .tab-content ul li {
+        padding-left: 0; /* Remove left padding on mobile */
     }
 }
