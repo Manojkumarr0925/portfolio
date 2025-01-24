@@ -52,16 +52,16 @@ header .color-line {
 }
 
 .intro img {
-    width: 200px; /* Reduced width for better mobile view */
-    height: 200px; /* Reduced height for better mobile view */
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    margin: 20px 0; /* Ensure some spacing around image */
+    margin-left: 30px;
 }
 
 .intro-text {
     max-width: 600px;
-    margin: 20px; /* Add margin for better spacing */
-    text-align: center; /* Center text on smaller screens */
+    margin-right: 30px;
+    text-align: left; /* Align text to left by default */
 }
 
 .intro-text h1 {
@@ -78,11 +78,11 @@ header .color-line {
 
 .social-icons {
     margin-top: 20px;
-    text-align: center; /* Center align icons */
+    text-align: left; /* Align social icons to left by default */
 }
 
 .social-icons a {
-    margin: 10px; /* Add margin around icons */
+    margin-right: 10px;
 }
 
 .social-icons img {
@@ -99,20 +99,20 @@ header .color-line {
 
 .tab-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically on mobile */
-    padding: 0 20px; /* Add padding for better spacing on mobile */
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .tab-menu {
     flex: 1;
-    padding: 20px 0;
-    border-right: none; /* Remove border on mobile */
-    border-bottom: 1px solid #34495e; /* Add bottom border */
+    padding-right: 20px;
+    border-right: 1px solid #34495e;
+    text-align: left; /* Align text to left */
 }
 
 .tab-content-container {
     flex: 3;
-    padding: 20px 0;
+    padding-left: 20px;
 }
 
 .tab-menu li {
@@ -156,7 +156,6 @@ header .color-line {
 .two-column-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Ensure proper spacing on mobile */
 }
 
 .two-column-list li {
@@ -166,13 +165,13 @@ header .color-line {
 
 /* Section styles */
 section {
-    padding: 20px; /* Reduced padding for mobile */
+    padding: 50px;
     border-bottom: 1px solid #34495e;
 }
 
 .section-heading {
     text-align: center;
-    font-size: 2em; /* Reduced size for better mobile view */
+    font-size: 2.5em;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif; /* Attractive font */
     color: #1abc9c; /* Green color for headings */
@@ -230,6 +229,9 @@ a:hover {
     .intro {
         padding: 20px; /* Reduce padding for smaller screens */
     }
+    .intro-text {
+        text-align: center; /* Center text on smaller screens */
+    }
     .intro-text h1 {
         font-size: 1.5em; /* Reduce heading size for mobile */
     }
@@ -237,10 +239,18 @@ a:hover {
         width: 150px; /* Further reduce width for smaller screens */
         height: 150px; /* Further reduce height for smaller screens */
     }
+    .social-icons {
+        text-align: center; /* Center align icons on smaller screens */
+    }
     .section-heading {
         font-size: 1.8em; /* Further reduce size for better mobile view */
     }
     .tab-container {
+        flex-direction: column; /* Stack items vertically on mobile */
         padding: 10px; /* Reduce padding for better spacing */
+    }
+    .tab-menu {
+        border-right: none; /* Remove border on mobile */
+        border-bottom: 1px solid #34495e; /* Add bottom border */
     }
 }
