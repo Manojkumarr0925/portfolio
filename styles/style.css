@@ -172,13 +172,18 @@ section {
     color: #1abc9c; /* Green color for headings */
 }
 
+/* Specific font size adjustments */
+#home p,
+#additional-info ul li,
+#additional-info p {
+    font-size: 1.4em; /* Slightly larger text size */
+}
+
 .tab-content ul li,
 .tab-content p,
-#about p, /* Increase text size for About section */
-#certifications p, /* Increase text size for Certifications section */
-#additional-info ul li, /* Increase text size for Additional Info */
-#additional-info p {
-    font-size: 1.6em; /* Make the text bigger */
+#about p, /* Maintain standard text size for other sections */
+#certifications p {
+    font-size: 1.2em; /* Standard text size */
 }
 
 footer {
@@ -212,9 +217,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-#additional-info ul li, /* Increase text size for Additional Info */
-#additional-info p {
-    font-size: 1.2em; /* Make the text bigger */
 }
