@@ -52,16 +52,16 @@ header .color-line {
 }
 
 .intro img {
-    width: 200px; /* Reduced width for better mobile view */
-    height: 200px; /* Reduced height for better mobile view */
+    width: 300px; /* Default width for larger screens */
+    height: 300px; /* Default height for larger screens */
     border-radius: 50%;
-    margin-left: 20px; /* Ensure some spacing around image */
+    margin-left: 30px;
 }
 
 .intro-text {
     max-width: 600px;
-    margin-right: 20px; /* Add margin for better spacing */
-    text-align: center; /* Center text on smaller screens */
+    margin-right: 30px;
+    text-align: left; /* Align text to left by default */
 }
 
 .intro-text h1 {
@@ -78,11 +78,11 @@ header .color-line {
 
 .social-icons {
     margin-top: 20px;
-    text-align: center; /* Center align icons */
+    text-align: left; /* Align social icons to left by default */
 }
 
 .social-icons a {
-    margin: 0 5px; /* Add margin around icons */
+    margin-right: 10px;
 }
 
 .social-icons img {
@@ -99,8 +99,8 @@ header .color-line {
 
 .tab-container {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-    padding: 0 20px; /* Add padding for better spacing on mobile */
 }
 
 .tab-menu {
@@ -229,12 +229,18 @@ a:hover {
     .intro {
         padding: 20px; /* Reduce padding for smaller screens */
     }
+    .intro-text {
+        text-align: center; /* Center text on smaller screens */
+    }
     .intro-text h1 {
         font-size: 1.5em; /* Reduce heading size for mobile */
     }
     .intro img {
         width: 150px; /* Further reduce width for smaller screens */
         height: 150px; /* Further reduce height for smaller screens */
+    }
+    .social-icons {
+        text-align: center; /* Center align icons on smaller screens */
     }
     .social-icons img {
         width: 20px; /* Further reduce width for smaller screens */
