@@ -172,18 +172,18 @@ section {
     color: #1abc9c; /* Green color for headings */
 }
 
-/* Specific font size adjustments */
-#home p,
-#additional-info ul li,
-#additional-info p {
-    font-size: 1.4em; /* Slightly larger text size */
-}
-
+/* Font size adjustments */
 .tab-content ul li,
 .tab-content p,
-#about p, /* Maintain standard text size for other sections */
-#certifications p {
-    font-size: 1.2em; /* Standard text size */
+#about p,
+#certifications p,
+#home p {
+    font-size: 1.2em; /* Standard text size for most sections */
+}
+
+#additional-info ul li,
+#additional-info p {
+    font-size: 1.4em; /* Larger text size for Additional Info section */
 }
 
 footer {
