@@ -182,11 +182,11 @@ section {
 .tab-content p,
 #about p,
 #certifications p,
+#additional-info ul li,
 #home p {
     font-size: 1.2em; /* Standard text size for most sections */
 }
 
-#additional-info ul li,
 #additional-info p {
     font-size: 1.4em; /* Larger text size for Additional Info section */
 }
