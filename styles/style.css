@@ -178,7 +178,7 @@ section {
 #certifications p, /* Increase text size for Certifications section */
 #additional-info ul li, /* Increase text size for Additional Info */
 #additional-info p {
-    font-size: 1.2em; /* Make the text bigger */
+    font-size: 1.6em; /* Make the text bigger */
 }
 
 footer {
@@ -212,4 +212,9 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#additional-info ul li, /* Increase text size for Additional Info */
+#additional-info p {
+    font-size: 1.2em; /* Make the text bigger */
 }
