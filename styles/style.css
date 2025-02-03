@@ -5,12 +5,28 @@ body {
     padding: 0;
     background-color: #2c3e50; /* Navy blue background */
     color: #ecf0f1; /* Light text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth theme transition */
+}
+
+/* Light theme styles */
+body.light-theme {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header.light-theme {
+    background-color: #e0e0e0;
+}
+
+header nav ul li a.light-theme {
+    color: #333;
 }
 
 header {
     background-color: #34495e; /* Darker navy blue */
     padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 header nav ul {
@@ -29,6 +45,7 @@ header nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif; /* Attractive font */
+    transition: color 0.3s;
 }
 
 header .color-line {
@@ -37,37 +54,65 @@ header .color-line {
     margin: 10px 0;
 }
 
-/* Logo styling */
-.logo {
-    max-height: 50px;
-    margin-left: 20px;
+/* Theme toggle button */
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ecf0f1;
+    transition: color 0.3s;
 }
 
+#theme-toggle.light-theme {
+    color: #333;
+}
+
+/* Fade animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight upward movement */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Intro section */
 .intro {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
-    flex-wrap: wrap; /* Add this to ensure items wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .intro img {
-    width: 300px; /* Default width for larger screens */
-    height: 300px; /* Default height for larger screens */
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-left: 30px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 .intro-text {
     max-width: 600px;
     margin-right: 30px;
-    text-align: left; /* Align text to left by default */
+    text-align: left;
 }
 
 .intro-text h1 {
     font-size: 2em;
     margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif; /* Attractive font */
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 .intro-text p {
@@ -78,7 +123,7 @@ header .color-line {
 
 .social-icons {
     margin-top: 20px;
-    text-align: left; /* Align social icons to left by default */
+    text-align: left;
 }
 
 .social-icons a {
@@ -86,9 +131,10 @@ header .color-line {
 }
 
 .social-icons img {
-    width: 30px; /* Set the width of the social icons */
-    height: 30px; /* Set the height of the social icons */
-    border: none; /* Remove the red border added during troubleshooting */
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
@@ -97,6 +143,26 @@ header .color-line {
     }
 }
 
+/* Section styles */
+section {
+    padding: 50px;
+    border-bottom: 1px solid #34495e;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* Attractive font */
+    color: #1abc9c; /* Green color for headings */
+}
+
+/* Light theme adjustments for section headings */
+body.light-theme .section-heading {
+    color: #1a73e8; /* A darker blue for headings in light theme */
+}
+
+/* Tab container */
 .tab-container {
     display: flex;
     justify-content: flex-start;
@@ -118,19 +184,36 @@ header .color-line {
 .tab-menu li {
     margin: 10px 0;
     padding: 10px;
-    background-color: #34495e;
+    background-color: #34495e; /* Dark background for dark theme */
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #ecf0f1; /* Light text for dark theme */
 }
 
 .tab-menu li.active {
-    background-color: #ffffff; /* Highlighted color */
-    color: #34495e; /* Text color when highlighted */
+    background-color: #1abc9c; /* Highlight color for selected tab in dark theme */
+    color: #2c3e50; /* Dark text for contrast */
 }
 
 .tab-menu li:hover {
-    background-color: #1abc9c; /* Hover color */
+    background-color: #1abc9c; /* Hover color for dark theme */
+}
+
+/* Light theme adjustments for tabs */
+body.light-theme .tab-menu li {
+    background-color: #e0e0e0; /* Light background for light theme */
+    color: #333; /* Dark text for light theme */
+}
+
+body.light-theme .tab-menu li.active {
+    background-color: #1a73e8; /* Highlight color for selected tab in light theme */
+    color: #fff; /* White text for contrast */
+}
+
+body.light-theme .tab-menu li:hover {
+    background-color: #1a73e8; /* Hover color for light theme */
+    color: #fff; /* White text for contrast */
 }
 
 .tab-content {
@@ -145,12 +228,27 @@ header .color-line {
     color: #87CEEB; /* Sky blue color for headers */
 }
 
+/* Light theme adjustments for tab headers */
+body.light-theme .tab-content h3 {
+    color: #1a73e8; /* A darker blue for tab headers in light theme */
+}
+
 #education p strong {
     color: #87CEEB; /* Sky blue color for university names */
 }
 
+/* Light theme adjustments for education section */
+body.light-theme #education p strong {
+    color: #1a73e8; /* A darker blue for university names in light theme */
+}
+
 .skyblue-link {
     color: #87CEEB; /* Sky blue color for specific link */
+}
+
+/* Light theme adjustments for links */
+body.light-theme .skyblue-link {
+    color: #1a73e8; /* A darker blue for specific links in light theme */
 }
 
 .two-column-list {
@@ -161,20 +259,6 @@ header .color-line {
 .two-column-list li {
     flex: 1 1 45%;
     margin: 5px 0;
-}
-
-/* Section styles */
-section {
-    padding: 50px;
-    border-bottom: 1px solid #34495e;
-}
-
-.section-heading {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* Attractive font */
-    color: #1abc9c; /* Green color for headings */
 }
 
 /* Font size adjustments */
@@ -191,6 +275,7 @@ section {
     font-size: 1.4em; /* Larger text size for Additional Info section */
 }
 
+/* Footer */
 footer {
     background-color: #34495e;
     padding: 10px 0;
@@ -201,6 +286,11 @@ footer {
 footer p {
     margin: 0;
     font-size: 1em;
+}
+
+/* Light theme adjustments for footer */
+body.light-theme footer {
+    background-color: #e0e0e0;
 }
 
 /* Smooth scroll for navigation */
@@ -215,13 +305,20 @@ html {
     vertical-align: middle;
 }
 
-a {
-    color: #87CEEB; /* Sky blue color for links */
+/* Contact section links */
+#contact a {
+    color: #87CEEB; /* Sky blue for dark theme */
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-a:hover {
+#contact a:hover {
     text-decoration: underline;
+}
+
+/* Light theme adjustments for contact links */
+body.light-theme #contact a {
+    color: #1a73e8; /* A darker blue for better contrast in light theme */
 }
 
 /* Media Queries for Responsiveness */
