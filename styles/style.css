@@ -71,18 +71,6 @@ header .color-line {
     color: #333;
 }
 
-/* Fade animations */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px); /* Optional: Add a slight upward movement */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* Intro section */
 .intro {
     display: flex;
@@ -141,6 +129,18 @@ header .color-line {
     to {
         opacity: 1;
     }
+}
+
+/* Fade animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: Add a slight upward movement */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Section styles */
@@ -321,48 +321,75 @@ body.light-theme #contact a {
     color: #1a73e8; /* A darker blue for better contrast in light theme */
 }
 
-/* Media Queries for Responsiveness */
+/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-    .intro {
-        padding: 20px; /* Reduce padding for smaller screens */
+    /* Fix theme toggle button overlapping */
+    #theme-toggle {
+        top: 15px; /* Adjust the top position */
+        right: 15px; /* Adjust the right position */
+        font-size: 1.2em; /* Slightly reduce the size */
     }
-    .intro-text {
-        text-align: center; /* Center text on smaller screens */
-    }
-    .intro-text h1 {
-        font-size: 1.5em; /* Reduce heading size for mobile */
-    }
-    .intro img {
-        width: 150px; /* Further reduce width for smaller screens */
-        height: 150px; /* Further reduce height for smaller screens */
-    }
-    .social-icons {
-        text-align: center; /* Center align icons on smaller screens */
-    }
-    .social-icons img {
-        width: 20px; /* Further reduce width for smaller screens */
-        height: 20px; /* Further reduce height for smaller screens */
-    }
+
+    /* Center and align section headings */
     .section-heading {
-        font-size: 1.8em; /* Further reduce size for better mobile view */
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 0 10px; /* Add padding to prevent text from touching edges */
     }
-    .tab-container {
-        flex-direction: column; /* Stack items vertically on mobile */
-        padding: 10px; /* Reduce padding for better spacing */
+
+    /* Ensure social icons stay in the same line */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 10px; /* Add spacing between icons */
     }
-    .tab-menu {
-        border-right: none; /* Remove border on mobile */
-        border-bottom: 1px solid #34495e; /* Add bottom border */
-        text-align: center; /* Center align text on mobile */
+
+    .social-icons a {
+        margin: 0; /* Remove default margin */
     }
-    .tab-content-container {
-        padding-left: 0; /* Remove left padding on mobile */
+
+    .social-icons img {
+        width: 25px; /* Slightly reduce icon size */
+        height: 25px;
     }
-    .tab-menu li {
-        text-align: center; /* Center align list items on mobile */
+
+    /* Fix overlapping content in soft skills section */
+    .two-column-list {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Add spacing between items */
     }
-    .tab-content ul,
-    .tab-content ul li {
-        padding-left: 0; /* Remove left padding on mobile */
+
+    .two-column-list li {
+        flex: 1 1 100%; /* Ensure each item takes full width */
+        margin: 0; /* Remove default margin */
+    }
+
+    /* Adjust padding for sections */
+    section {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust intro section for better spacing */
+    .intro {
+        padding: 20px 10px; /* Reduce padding */
+    }
+
+    .intro-text h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .intro-text p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .intro img {
+        width: 120px; /* Further reduce image size */
+        height: 120px;
+        margin-top: 10px;
     }
 }
