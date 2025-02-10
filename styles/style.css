@@ -1,3 +1,11 @@
+Got it! Let's make the necessary adjustments:
+
+1. Ensure the top section header doesn't have three lines one below the other.
+2. Provide more space between alternative points in the Soft Skills section to avoid overlapping.
+
+Here's the updated CSS:
+
+```css
 /* General styles */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -367,103 +375,102 @@ body.light-theme #contact a {
     }
     
     /* New mobile-specific styles for section headers */
-    @media (max-width: 768px) {
-        .mobile-header-toggle {
-            display: block;
-            background-color: #1abc9c; /* Green background for the button */
-            color: #2c3e50; /* Dark text for contrast */
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-    
-        .mobile-header-menu {
-            display: none; /* Hide the menu by default */
-        }
-    
-        .mobile-header-menu.open {
-            display: block; /* Show the menu when toggled */
-        }
-    
-        .mobile-header-menu li {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #34495e;
-            border-radius: 5px;
-            cursor: pointer;
-            color: #ecf0f1;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-    
-        .mobile-header-menu li:hover {
-            background-color: #1abc9c;
-            color: #2c3e50;
-        }
+    .mobile-header-toggle {
+        display: block;
+        background-color: #1abc9c; /* Green background for the button */
+        color: #2c3e50; /* Dark text for contrast */
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 1.2em;
+        margin-bottom: 10px;
     }
-    
-    /* Adjustments for home section */
-    #home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
+
+    .mobile-header-menu {
+        display: none; /* Hide the menu by default */
     }
-    
-    #home .intro-text {
-        text-align: center;
-        margin: 0 auto;
+
+    .mobile-header-menu.open {
+        display: block; /* Show the menu when toggled */
     }
-    
-    #home .intro img {
-        margin: 20px auto;
-    }
-    
-    .social-icons {
-        text-align: center;
-        margin: 20px 0;
-    }
-    
-    .social-icons a {
-        margin: 0 10px;
-    }
-    
-    /* Adjustments for soft skills in the Skills section */
-    .skills .soft-skills {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .skills .soft-skills li {
-        flex: 1 1 100%;
+
+    .mobile-header-menu li {
         margin: 10px 0;
-    }
-    
-    /* Adjustments for the dashes in the top section in desktop version */
-    header nav ul li:after {
-        content: '|';
-        margin: 0 10px;
+        padding: 10px;
+        background-color: #34495e;
+        border-radius: 5px;
+        cursor: pointer;
         color: #ecf0f1;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
-    
-    header nav ul li:last-child:after {
-        content: '';
-        margin: 0;
+
+    .mobile-header-menu li:hover {
+        background-color: #1abc9c;
+        color: #2c3e50;
     }
-    
-    /* Align text in the Expense Tracker project section */
-    #expense-tracker .tab-content p {
-        text-align: left;
-        margin: 10px 0;
-    }
-    
-    #expense-tracker .tab-content ul {
-        padding-left: 20px;
-    }
-    
-    #expense-tracker .tab-content ul li {
-        margin: 10px 0;
-    }
+}
+
+/* Adjustments for home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#home .intro-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#home .intro img {
+    margin: 20px auto;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Adjustments for soft skills in the Skills section */
+.skills .soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills .soft-skills li {
+    flex: 1 1 100%;
+    margin: 10px 0;
+    padding: 5px; /* Added padding to prevent overlapping */
+}
+
+/* Adjustments for the dashes in the top section in desktop version */
+header nav ul li:after {
+    content: '|';
+    margin: 0 10px;
+    color: #ecf0f1;
+}
+
+header nav ul li:last-child:after {
+    content: '';
+    margin: 0;
+}
+
+/* Align text in the Expense Tracker project section */
+#expense-tracker .tab-content p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+#expense-tracker .tab-content ul {
+    padding-left: 20px;
+}
+
+#expense-tracker .tab-content ul li {
+    margin: 10px 0;
 }
