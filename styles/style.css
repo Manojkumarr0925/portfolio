@@ -361,6 +361,7 @@ body.light-theme #contact a {
     .tab-menu li {
         text-align: center; /* Center align list items on mobile */
     }
+    
     .tab-content ul,
     .tab-content ul li {
         padding-left: 0; /* Remove left padding on mobile */
