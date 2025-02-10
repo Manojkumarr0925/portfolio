@@ -30,6 +30,7 @@ header nav ul li a.light-theme {
     color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #34495e; /* Darker navy blue */
     padding: 10px 0;
@@ -44,8 +45,8 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Use inline-block for better spacing */
+    margin: 0 10px; /* Adjust spacing between links */
 }
 
 header nav ul li a {
@@ -56,10 +57,13 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
+header nav ul li a:hover {
+    color: #1abc9c; /* Highlight color on hover */
+}
+
+/* Remove the color-line (three horizontal lines) */
 header .color-line {
-    height: 5px;
-    background: linear-gradient(to right, red, yellow, green, cyan, blue, magenta);
-    margin: 10px 0;
+    display: none; /* Hide the color-line */
 }
 
 /* Theme toggle button */
