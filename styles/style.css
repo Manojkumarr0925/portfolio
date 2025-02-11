@@ -51,7 +51,7 @@ header nav ul li a {
 /* Theme toggle button */
 #theme-toggle {
     position: absolute;
-    top: 10px;
+    top: 8px; /* Moved 2mm up */
     right: 20px;
     background: none;
     border: none;
@@ -337,6 +337,9 @@ body.light-theme #contact a {
     .intro {
         padding: 20px; /* Reduce padding for smaller screens */
     }
+    .intro img {
+        margin-left: 10px; /* Slightly move image to the left */
+    }
     .intro-text {
         text-align: center; /* Center text on smaller screens */
     }
@@ -349,6 +352,10 @@ body.light-theme #contact a {
     }
     .social-icons {
         text-align: center; /* Center align icons on smaller screens */
+    }
+    .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
     }
     .social-icons img {
         width: 20px; /* Further reduce width for smaller screens */
