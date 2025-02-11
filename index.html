@@ -10,15 +10,14 @@
 <body>
     <header>
         <nav>
-            <div class="menu-icon" id="menu-icon">&#9776;</div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#coursework">Coursework</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#additional-info">Additional Info</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -27,6 +26,7 @@
         <button id="theme-toggle">🌓</button>
     </header>
 
+    <!-- Home Section -->
     <section id="home">
         <div class="intro">
             <div class="intro-text">
@@ -44,11 +44,13 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
         <h2 class="section-heading">About</h2>
-        <p>Motivated Data Science graduate student with a robust background in statistical analysis, Python, and SQL. Actively seeking internship opportunities to apply data-driven insights in solving real-world challenges and contributing to the success of innovative teams, while continuously enhancing technical and analytical skills.</p>
+        <p>Motivated Data Science graduate student with a solid foundation in Statistical analysis, Python, and SQL, eager to leverage data-driven insights to solve complex, real-world challenges. Seeking an internship opportunity where I can apply my technical expertise and analytical mindset to contribute meaningfully to an innovative team. Passionate about continuous learning, I aim to enhance my skills while delivering impactful solutions that drive organizational success.</p>
     </section>
 
+    <!-- Education Section -->
     <section id="education">
         <h2 class="section-heading">Education</h2>
         <div class="tab-container">
@@ -62,7 +64,7 @@
                     <p><strong>University of St Thomas</strong></p>
                     <p>Masters in Data Science</p>
                     <p>St Paul, MN</p>
-                    <p>(2024-Present)</p>
+                    <p>(2024–Present)</p>
                 </div>
                 <div id="bachelors" class="tab-content">
                     <p><strong>MES College of Arts, Commerce and Science, Karnataka, India</strong></p>
@@ -80,6 +82,79 @@
         </div>
     </section>
 
+    <!-- Coursework Section -->
+    <section id="coursework">
+        <h2 class="section-heading">Coursework</h2>
+        <div class="tab-container">
+            <ul class="tab-menu">
+                <li class="active" data-target="#data-science">Data Science & Analytics</li>
+                <li data-target="#statistics">Statistics</li>
+                <li data-target="#financial-analysis">Financial Analysis</li>
+            </ul>
+            <div class="tab-content-container">
+                <div id="data-science" class="tab-content active">
+                    <ul>
+                        <li>Foundations in Python I</li>
+                        <li>Database Management Systems and Design</li>
+                        <li>Cloud Computing</li>
+                        <li>Data Preparation and Analysis</li>
+                    </ul>
+                </div>
+                <div id="statistics" class="tab-content">
+                    <ul>
+                        <li>Methods & Techniques for Business Data Analysis</li>
+                        <li>Business Data Analysis</li>
+                        <li>Regression Analysis (Python, R)</li>
+                        <li>Hypothesis Testing (Python, Excel)</li>
+                    </ul>
+                </div>
+                <div id="financial-analysis" class="tab-content">
+                    <ul>
+                        <li>Financial Management</li>
+                        <li>Advanced Financial Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="tab-container">
+            <ul class="tab-menu">
+                <li class="active" data-target="#programming-languages">Programming Languages</li>
+                <li data-target="#data-science-skills">Data Science & Analytics</li>
+                <li data-target="#tools">Tools & Platforms</li>
+            </ul>
+            <div class="tab-content-container">
+                <div id="programming-languages" class="tab-content active">
+                    <ul>
+                        <li>Python (Pandas, NumPy, Matplotlib)</li>
+                        <li>SQL (Oracle SQL, Snowflake SQL)</li>
+                        <li>R (Basic)</li>
+                        <li>MATLAB (Basic)</li>
+                    </ul>
+                </div>
+                <div id="data-science-skills" class="tab-content">
+                    <ul>
+                        <li>Statistical Analysis (Regression, Hypothesis Testing, Clustering)</li>
+                        <li>Data Visualization (Power BI, Tableau, Matplotlib)</li>
+                        <li>Machine Learning (Basic: Linear Regression, Decision Trees)</li>
+                    </ul>
+                </div>
+                <div id="tools" class="tab-content">
+                    <ul>
+                        <li>IDEs: PyCharm, Jupyter Notebook, Visual Studio Code</li>
+                        <li>Database Management: Oracle SQL, Snowflake SQL, MySQL</li>
+                        <li>Version Control: Git, GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
     <section id="experience">
         <h2 class="section-heading">Experience</h2>
         <div class="tab-container">
@@ -105,7 +180,7 @@
                         <li>Assisted in collecting, organizing, and validating financial data for tax filings using Excel and SQL.</li>
                         <li>Conducted data reconciliation to identify discrepancies across financial records, improving reporting accuracy.</li>
                         <li>Supported the preparation of tax reports by analyzing client financials and transaction data.</li>
-                        <li>Automated routine data entry processes, which resulted in reducing errors and enhancing efficiency.</li>
+                        <li>Automated routine data entry tasks, which resulted in reducing errors and enhancing efficiency.</li>
                         <li>Developed visual reports and summaries to track tax compliance and filing deadlines.</li>
                     </ul>
                 </div>
@@ -123,6 +198,7 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2 class="section-heading">Projects</h2>
         <div class="tab-container">
@@ -155,85 +231,15 @@
         </div>
     </section>
 
-    <section id="skills">
-        <h2 class="section-heading">Skills</h2>
-        <div class="tab-container">
-            <ul class="tab-menu">
-                <li class="active" data-target="#frameworks">Frameworks</li>
-                <li data-target="#programming-languages">Programming Languages</li>
-                <li data-target="#soft-skills">Soft Skills</li>
-            </ul>
-            <div class="tab-content-container">
-                <div id="frameworks" class="tab-content active">
-                    <ul class="two-column-list">
-                        <li>Oracle SQL</li>
-                        <li>Tableau</li>
-                        <li>Power BI</li>
-                        <li>Statistical Analysis</li>
-                        <li>Regression Analysis</li>
-                        <li>Hypothesis Testing</li>
-                        <li>Business Data Analytics</li>
-                        <li>Database Management Systems (DBMS)</li>
-                    </ul>
-                </div>
-                <div id="programming-languages" class="tab-content">
-                    <p style="font-size: 1.2em;">Python</p>
-                    <p style="font-size: 1.2em;">SQL</p>
-                </div>
-                <div id="soft-skills" class="tab-content">
-                    <ul class="two-column-list">
-                        <li>Leadership</li>
-                        <li>Teamwork</li>
-                        <li>Discipline</li>
-                        <li>Communication</li>
-                        <li>Time Management</li>
-                        <li>Mentoring</li>
-                        <li>Customer Focus</li>
-                        <li>Problem Solving</li>
-                        <li>Analytical Thinking</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certifications">
-        <h2 class="section-heading">Certifications</h2>
-        <p>Complete Guide to Power BI for Data Analysts by Microsoft Press</p>
-    </section>
-
+    <!-- Additional Info Section -->
     <section id="additional-info">
         <h2 class="section-heading">Additional Information</h2>
-        <div class="tab-container">
-            <ul class="tab-menu">
-                <li class="active" data-target="#languages">Languages</li>
-                <li data-target="#interests">Interests</li>
-                <li data-target="#misc">Misc</li>
-            </ul>
-            <div class="tab-content-container">
-                <div id="languages" class="tab-content active">
-                    <ul>
-                        <li>English (Professional)</li>
-                        <li>Kannada (Native)</li>
-                        <li>Hindi</li>
-                    </ul>
-                </div>
-                <div id="interests" class="tab-content">
-                    <ul>
-                        <li>Fitness</li>
-                        <li>Cricket</li>
-                    </ul>
-                </div>
-                <div id="misc" class="tab-content">
-                    <ul>
-                        <li>Indo-Japanese Martial Arts</li>
-                        <li>National Cadet Corps</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <p>
+            Certified in <strong>Power BI for Data Analysts</strong> by Microsoft Press and <strong>AWS Certified Cloud Practitioner (CLF-C02) Cert Prep: 1 Cloud Concepts</strong> through LinkedIn Learning, I bring a strong foundation in data visualization, analytics, and cloud computing. Fluent in <strong>English (Professional)</strong>, <strong>Kannada (Native)</strong>, and <strong>Hindi</strong>, I thrive in multicultural environments. Outside of work, I enjoy staying active through fitness, cricket, and Indo-Japanese martial arts, and I’ve honed my discipline and leadership skills as a member of the <strong>National Cadet Corps</strong>. Known for my <strong>communication</strong>, <strong>teamwork</strong>, and <strong>quick learning abilities</strong>, I approach challenges with confidence and a solutions-oriented mindset.
+        </p>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2 class="section-heading">Contact</h2>
         <p>
