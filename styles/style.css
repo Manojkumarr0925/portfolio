@@ -61,6 +61,12 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
+header .color-line {
+    height: 5px;
+    background: linear-gradient(to right, red, yellow, green, cyan, blue, magenta);
+    margin: 10px 0;
+}
+
 #theme-toggle.light-theme {
     color: #333;
 }
