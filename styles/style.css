@@ -181,14 +181,11 @@ body.light-theme .section-heading {
     padding-left: 20px;
 }
 
+/* Reduce font size for tab headers */
 .tab-menu li {
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #34495e; /* Dark background for dark theme */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    color: #ecf0f1; /* Light text for dark theme */
+    font-size: 1.1em; /* Adjust this value as needed */
+    margin: 8px 0; /* Add spacing between tabs */
+    padding: 8px 12px; /* Adjust padding for better spacing */
 }
 
 .tab-menu li.active {
@@ -274,26 +271,14 @@ body.light-theme .skyblue-link {
     line-height: 1.6; /* Improve readability */
 }
 
-/* Projects Section - Align Font Sizes */
-#projects .tab-content ul li {
-    font-size: 1.1em; /* Match the standard text size */
-    line-height: 1.6; /* Improve readability */
-    margin-bottom: 10px; /* Add spacing between list items */
+/* Reduce font size for project details (Languages, Tools, GitHub) */
+#projects .tab-content p {
+    font-size: 1em; /* Match the standard text size */
+    margin: 5px 0; /* Add spacing between lines */
 }
 
-#projects .tab-content ul li ul {
-    margin-top: 5px; /* Add spacing for nested lists */
-}
-
-#projects .tab-content ul li ul li {
-    font-size: 1em; /* Slightly smaller for tools and features */
-    margin-left: 20px; /* Indent for sub-bullets */
-}
-
-#projects .tab-content h3 {
-    font-size: 1.5em; /* Match heading size with other sections */
-    margin-bottom: 15px; /* Add spacing below headings */
-    color: #87CEEB; /* Sky blue color for headers */
+#projects .tab-content a {
+    font-size: 1em; /* Match the standard text size */
 }
 
 /* Additional Info Section */
@@ -400,7 +385,12 @@ body.light-theme #contact a {
         padding-left: 0; /* Remove left padding on mobile */
     }
     .tab-menu li {
-        text-align: center; /* Center align list items on mobile */
+        font-size: 1em; /* Adjust font size for mobile */
+        padding: 8px 10px; /* Consistent padding for all tabs */
+        margin: 5px 0; /* Consistent margin for all tabs */
+    }
+    .tab-content {
+        padding: 10px; /* Add padding for better spacing */
     }
     .tab-content ul,
     .tab-content ul li {
