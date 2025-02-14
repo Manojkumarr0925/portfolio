@@ -272,10 +272,9 @@ body.light-theme .skyblue-link {
     line-height: 1.6; /* Improve readability */
 }
 
-/* Ensure consistent font size for tools and features */
-#projects .tab-content ul li ul {
+/* Ensure consistent font size for tools and features in project section */
+#projects .tab-content ul li {
     font-size: 1.1em; /* Match the standard text size */
-    margin-top: 5px; /* Add spacing for nested lists */
 }
 
 #projects .tab-content ul li ul li {
