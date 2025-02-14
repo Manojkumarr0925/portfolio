@@ -192,6 +192,7 @@ body.light-theme .section-heading {
 .tab-menu li.active {
     background-color: #1abc9c; /* Highlight color for selected tab in dark theme */
     color: #2c3e50; /* Dark text for contrast */
+    font-size: 1.1em; /* Ensure font size for selected tab */
 }
 
 .tab-menu li:hover {
@@ -207,6 +208,7 @@ body.light-theme .tab-menu li {
 body.light-theme .tab-menu li.active {
     background-color: #1a73e8; /* Highlight color for selected tab in light theme */
     color: #fff; /* White text for contrast */
+    font-size: 1.1em; /* Ensure font size for selected tab */
 }
 
 body.light-theme .tab-menu li:hover {
@@ -273,6 +275,10 @@ body.light-theme .skyblue-link {
 }
 
 /* Ensure consistent font size for tools and features in project section */
+#projects .tab-content ul li {
+    font-size: 1.1em; /* Match the standard text size */
+}
+
 #projects .tab-content ul li ul {
     font-size: 1.1em; /* Match the standard text size */
     margin-top: 5px; /* Add spacing for nested lists */
