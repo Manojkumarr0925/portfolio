@@ -182,9 +182,9 @@ body.light-theme .section-heading {
     padding-left: 20px;
 }
 
-/* Reduce font size for tab headers */
+/* Font size for all tabs */
 .tab-menu li {
-    font-size: 1.1em; /* Adjust this value as needed */
+    font-size: 1.1em; /* Set font size for tabs */
     margin: 8px 0; /* Add spacing between tabs */
     padding: 8px 12px; /* Adjust padding for better spacing */
 }
@@ -260,21 +260,7 @@ body.light-theme .skyblue-link {
     margin: 5px 0;
 }
 
-/* Reduce font size for selected tab */
-.tab-menu li.active {
-    background-color: #1abc9c; /* Highlight color for selected tab in dark theme */
-    color: #2c3e50; /* Dark text for contrast */
-    font-size: 0.9em; /* Reduced font size for selected tab */
-}
-
-/* Reduce font size for selected tab in light theme */
-body.light-theme .tab-menu li.active {
-    background-color: #1a73e8; /* Highlight color for selected tab in light theme */
-    color: #fff; /* White text for contrast */
-    font-size: 0.9em; /* Reduced font size for selected tab */
-}
-
-/* General font size adjustments */
+/* Font size adjustments */
 .tab-content ul li,
 .tab-content p,
 #about p,
@@ -287,8 +273,9 @@ body.light-theme .tab-menu li.active {
 }
 
 /* Ensure consistent font size for tools and features in project section */
-#projects .tab-content ul li {
+#projects .tab-content ul li ul {
     font-size: 1.1em; /* Match the standard text size */
+    margin-top: 5px; /* Add spacing for nested lists */
 }
 
 #projects .tab-content ul li ul li {
@@ -362,6 +349,7 @@ body.light-theme #contact a {
     }
     .intro img {
         margin-left: 10px; /* Slightly move image to the left */
+        margin-top: 20px; /* Move image down by 1cm */
     }
     .intro-text {
         text-align: center; /* Center text on smaller screens */
