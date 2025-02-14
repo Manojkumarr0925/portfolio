@@ -234,12 +234,13 @@ body.light-theme .tab-content h3 {
 }
 
 #education p strong {
-    color: #87CEEB; /* Sky blue color for university names */
+    color: inherit; /* Inherit the default text color */
+    font-weight: bold; /* Ensure bold text remains bold */
 }
 
 /* Light theme adjustments for education section */
 body.light-theme #education p strong {
-    color: #1a73e8; /* A darker blue for university names in light theme */
+    color: inherit; /* Inherit the default text color */
 }
 
 .skyblue-link {
@@ -271,6 +272,28 @@ body.light-theme .skyblue-link {
 #additional-info p {
     font-size: 1.2em; /* Standard text size */
     line-height: 1.6; /* Improve readability */
+}
+
+/* Projects Section - Align Font Sizes */
+#projects .tab-content ul li {
+    font-size: 1.1em; /* Match the standard text size */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+#projects .tab-content ul li ul {
+    margin-top: 5px; /* Add spacing for nested lists */
+}
+
+#projects .tab-content ul li ul li {
+    font-size: 1em; /* Slightly smaller for tools and features */
+    margin-left: 20px; /* Indent for sub-bullets */
+}
+
+#projects .tab-content h3 {
+    font-size: 1.5em; /* Match heading size with other sections */
+    margin-bottom: 15px; /* Add spacing below headings */
+    color: #87CEEB; /* Sky blue color for headers */
 }
 
 /* Additional Info Section */
