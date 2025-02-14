@@ -260,7 +260,21 @@ body.light-theme .skyblue-link {
     margin: 5px 0;
 }
 
-/* Font size adjustments */
+/* Reduce font size for selected tab */
+.tab-menu li.active {
+    background-color: #1abc9c; /* Highlight color for selected tab in dark theme */
+    color: #2c3e50; /* Dark text for contrast */
+    font-size: 0.9em; /* Reduced font size for selected tab */
+}
+
+/* Reduce font size for selected tab in light theme */
+body.light-theme .tab-menu li.active {
+    background-color: #1a73e8; /* Highlight color for selected tab in light theme */
+    color: #fff; /* White text for contrast */
+    font-size: 0.9em; /* Reduced font size for selected tab */
+}
+
+/* General font size adjustments */
 .tab-content ul li,
 .tab-content p,
 #about p,
