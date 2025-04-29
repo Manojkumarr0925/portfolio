@@ -334,19 +334,20 @@
     }
   }
 
-  /* Projects section: make links pop against the brick background */
+ /* Projects section links match header color */
 #projects a {
-    color: #f1c40f;           /* a bright gold-yellow */
+    color: var(--raw-highlight);      /* Brick-red accent */
     text-decoration: underline;
   }
   
   #projects a:hover {
-    color: #f39c12;           /* a deeper orange on hover */
+    color: var(--raw-contrast);       /* Light text on hover for feedback */
   }
   
-  /* Ensure light-theme still reads well */
+  /* In light theme, keep them visible */
   body.light-theme #projects a {
-    color: #d35400;           /* a visible burnt-orange on white */
+    color: var(--raw-highlight);      /* Same brick-red on white */
   }
+  
   
   
