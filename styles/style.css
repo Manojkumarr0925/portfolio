@@ -333,4 +333,20 @@
       font-size: 1.8em;
     }
   }
+
+  /* Projects section: make links pop against the brick background */
+#projects a {
+    color: #f1c40f;           /* a bright gold-yellow */
+    text-decoration: underline;
+  }
+  
+  #projects a:hover {
+    color: #f39c12;           /* a deeper orange on hover */
+  }
+  
+  /* Ensure light-theme still reads well */
+  body.light-theme #projects a {
+    color: #d35400;           /* a visible burnt-orange on white */
+  }
+  
   
