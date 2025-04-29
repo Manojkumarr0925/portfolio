@@ -349,5 +349,11 @@
     color: var(--raw-highlight);      /* Same brick-red on white */
   }
   
+  /* Move theme-toggle down on mobile so it sits just above the color-line */
+@media (max-width: 768px) {
+    #theme-toggle {
+      top: 50px;    /* adjust this value until it sits right above the line */
+    }
+  }
   
   
